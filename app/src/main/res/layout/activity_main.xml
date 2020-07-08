@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- 체크박스 -->
+    <!-- 리니어레이아웃에 orientation 이 없으면 horizontal 이 된다.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_pol"
+            android:text="정치"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_eco"
+            android:text="경제"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_ent"
+            android:text="연예"
+            android:checked="true"/> <!-- XML에서 체크된 상태로 변경 -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_spo"
+            android:text="스포츠"/>
+    </LinearLayout>
+    <!-- 라디오 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 라디오버튼을 하나의 그룹으로 묶어주기 위해 라디오그룹이 필요함 -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_male"
+                android:text="남성"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:text="여성"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_trans"
+                android:text="트랜스젠더"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--토글버튼-->
+    <!-- 버튼이 토글될때마다 textOff/textOn 에서 지정한 글씨로 변경됨-->
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/togglebutton"
+        android:text="토글버튼(표시안됨)"
+        android:textOn="토글버튼ON"
+        android:textOff="토글버튼OFF"
+        android:checked="true"/>
+
+    <!--스위치-->
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchbutton"
+        android:textOn="온(표시안됨)"
+        android:textOff="오프(표시안됨)"
+        android:checked="true"
+        android:text="스위치"/>
+
+    <!--스피너(콤보박스 or 셀렉트박스)-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/button"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textview"
+        android:background="#ffff00"
+        android:text="선택항목출력"
+        android:textSize="30dp"
+        android:textColor="#ff0000"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

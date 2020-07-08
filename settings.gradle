@@ -1,0 +1,2 @@
+rootProject.name='A09CompoundButton'
+include ':app'
